@@ -145,10 +145,6 @@
   cursor: pointer;
 }
 
-.theme-menu__button:focus {
-  outline: none;
-}
-
 .main {
   padding-block-start: 100px;
 }
@@ -166,6 +162,7 @@
   font-variation-settings: "wght" var(--accent-font-weight, 700);
   padding-inline: 10px;
   padding-block: 5px;
+  border-bottom: 2px solid var(--accent-color);
 }
 
 .card__image {
@@ -173,6 +170,7 @@
   object-position: center;
   inline-size: 100%;
   margin-block: 5px;
+  border-bottom: 2px solid var(--accent-color);
 }
 
 .card__content {
@@ -188,9 +186,10 @@
 }
 
 .footer {
-  justify-self: center;
   padding-block-start: 50px;
   padding-block-end: 100px;
+  display: flex;
+  justify-content: center;
 }
 
 .button:focus-visible {
@@ -224,7 +223,7 @@
   display: flex;
   align-items: center;
   gap: 9px;
-
+  cursor: pointer;
   padding-inline: 20px;
   padding-block: 15px;
 }
@@ -267,11 +266,6 @@
 card__like-button {
   font-size: 14px;
   line-height: 90%;
-}
-
-.card__icon-button:focus,
-card__like-button:focus {
-  outline: none;
 }
 
 .card__icon-button:focus-visible {
