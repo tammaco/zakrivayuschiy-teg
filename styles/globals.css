@@ -37,6 +37,17 @@ input {
   font-size: inherit;
 }
 
+button {
+  border: 2px solid var(--accent-color);
+  background-color: var(--bg-color, #fff);
+  position: relative;
+  color: var(--accent-color, #000);
+}
+
+button:focus {
+  outline: none;
+}
+
 ul,
 ol {
   list-style: none;
